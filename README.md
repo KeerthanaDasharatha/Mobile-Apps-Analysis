@@ -60,27 +60,26 @@ The number of ID is the same (7197), so that there is no missing data
 
 **Top-rated apps in a each category**
 
- Total number of genres available: 23
-
- According to number apps More than half (3862) of the apps belong to the Games genre, followed by Entertainment (353) and Education (453)
-
-
+Most popular rated app : The VR Roller Coaster and Mannequin Challenge are the most popular apps, each with 2 app_counts."
+ 
 ## **Number of Apps per Genre** ##
 
-Most popular genre: Games is the most popular genre with 3862 apps, followed by Entertainment with 535 apps
+ Total number of genres available: 23
+According to number apps More than half (3862) of the apps belong to the Games genre, followed by Entertainment (353) and Education (453)
 
-Distribution: The number of apps varies greatly across genres, with Games having significantly more apps than most other genres
-
-Less popular genres: Some genres have relatively few apps, such as Catalogs with only 10 apps
-
-Potential for further analysis: This data could be used to further analyze app trends, user preferences, and market saturation in different genres.
 
  **total user rating count of apps by genre?**
+ The most popular user rate  categories on mobile app store are Games,Social Networking, Photo & Video ,with Games being the most dominant category
 
- **top-rated apps in a specific category**
-
+ **Get top-rated apps in a specific category**
+ According to users, they gave each game a rating of 5.
+ 
  **the average user rating of apps across all categories and by genre?**
  
+ **Top rated genre** : Productivity has the highest average rating with (4.01),followed closely by Music with an average rating of (3.98)
+ Photo & Video and Business genres also exbits strong user ratings, averaging around 3.80 and 3.75,respectively 
+
+
  **the count and percentage of free and paid apps for all categories?**
  
  There are more free apps (56.36 %) compared to paid apps (43.64 %)
@@ -92,3 +91,5 @@ Potential for further analysis: This data could be used to further analyze app t
 **Variety of Genres Represented**: The output includes apps from 20 different genres, showcasing a wide range of interests and needs being met, This demonstrates the breadth of the app market and the potential to cater to diverse user preferences.
 
 **Specific App Highlights**: Popular and Practical Apps: Productivity apps (VPN Proxy Master), financial apps (Credit Karma), and health and fitness apps (Yoga Studio) are among the highly rated options, suggesting their practical value to users, Entertainment and Lifestyle: Entertainment apps (Bruh-Button, Head Soccer) and lifestyle apps (ipsy, We Heart It) also have high ratings, reflecting their ability to engage and connect with users, Niche Categories: Even niche genres like Catalogs (CPlus for Craigslist) and Medical (Blink Health) have top-rated apps, indicating opportunities for success in specialized areas.
+
+**the content rating by count?**
