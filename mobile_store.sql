@@ -121,4 +121,57 @@ order by user_rating desc,rating_count_tot desc) as rank
 from app_store e) as x
 where x.rank = 1
 
+-- What is the most common app price by genre?
 
+WITH price_stats AS (
+SELECT 
+	prime_genre, 
+	price, 
+	COUNT(price) price_count,
+	DENSE_RANK () OVER (PARTITION BY prime_genre ORDER BY COUNT(price) DESC) ranking
+FROM app_store
+GROUP BY 1, 2)
+
+SELECT 
+	prime_genre, 
+	price,
+	price_count
+FROM price_stats
+WHERE ranking = 1;
+
+-- Similarly, what is the least common app price by genre?
+
+WITH price_stats AS (
+SELECT 
+	prime_genre, 
+	price, 
+	COUNT(price) price_count,
+	DENSE_RANK () OVER (PARTITION BY prime_genre ORDER BY COUNT(price)) ranking
+FROM app_store
+GROUP BY 1, 2)
+
+SELECT 
+	prime_genre, 
+	price,
+	price_count
+FROM price_stats
+WHERE ranking = 1;
+
+-- What is the most common content rating of apps by genre?
+
+WITH genre_cont_rating AS (
+SELECT
+	prime_genre, 
+	cont_rating, 
+	COUNT(cont_rating) cont_rating_count,
+	DENSE_RANK () OVER (PARTITION BY prime_genre ORDER BY COUNT(cont_rating) DESC) ranking
+FROM app_store
+GROUP BY 1, 2)
+
+Select
+	prime_genre, 
+	cont_rating, 
+	cont_rating_count
+FROM genre_cont_rating
+WHERE ranking = 1
+ORDER BY 1;
