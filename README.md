@@ -52,44 +52,51 @@ This repository contains an exploratory data analysis (EDA) on mobile store Apps
    
 3. Tableau
 
-## **Exploratory Data Analysis** ##
+## **Key findings** ##
 
-**Number of Apps and missing value in data set**
+ **Market Analysis**
 
-The number of ID is the same (7197), so that there is no missing data
+Total number of genres available: 23
 
-**Top-rated apps in a each category**
+More than half (53.66 %) of the apps belong to the Games genre, followed by Entertainment (7.43 %) and Education (6.29 %)
 
-Most popular rated app : The VR Roller Coaster and Mannequin Challenge are the most popular apps, each with 2 app_counts."
- 
-## **Number of Apps per Genre** ##
-
- Total number of genres available: 23
-According to number apps More than half (3862) of the apps belong to the Games genre, followed by Entertainment (353) and Education (453)
+There are more free apps (56.36 %) compared to paid apps (43.64 %)
 
 
- **total user rating count of apps by genre?**
- The most popular user rate  categories on mobile app store are Games,Social Networking, Photo & Video ,with Games being the most dominant category
+There are 4 types of contents offered:
 
- **Get top-rated apps in a specific category**
- According to users, they gave each game a rating of 5.
- 
- **the average user rating of apps across all categories and by genre?**
- 
- **Top rated genre** : Productivity has the highest average rating with (4.01),followed closely by Music with an average rating of (3.98)
- Photo & Video and Business genres also exbits strong user ratings, averaging around 3.80 and 3.75,respectively 
+       4+ (61.60 %)
+      
+       9+ (13.71 %)
+      
+       12+ (16.05 %)
+      
+       17+ (8.64 %)
+      
+**Trending apps and genres by rating**
 
+The average user rating of all iOS apps is 3.527
 
- **the count and percentage of free and paid apps for all categories?**
- 
- There are more free apps (56.36 %) compared to paid apps (43.64 %)
+Top 3 genres with highest ratings:
 
- **Top rated app for each genre**
- 
- **User Ratings**: All Highly Rated Apps. Every app listed has a user rating of 5, indicating a high level of user satisfaction across diverse genres, This suggests that users are generally finding apps that meet their needs and expectations.
- 
-**Variety of Genres Represented**: The output includes apps from 20 different genres, showcasing a wide range of interests and needs being met, This demonstrates the breadth of the app market and the potential to cater to diverse user preferences.
+        Productivity: 4.281 (Rank 12th in total number of ratings)
+        
+        Music: 4.261 (Rank 5th in total number of ratings)
+        
+        Photo & Video: 4.092 (Rank 3rd in total number of ratings)
 
-**Specific App Highlights**: Popular and Practical Apps: Productivity apps (VPN Proxy Master), financial apps (Credit Karma), and health and fitness apps (Yoga Studio) are among the highly rated options, suggesting their practical value to users, Entertainment and Lifestyle: Entertainment apps (Bruh-Button, Head Soccer) and lifestyle apps (ipsy, We Heart It) also have high ratings, reflecting their ability to engage and connect with users, Niche Categories: Even niche genres like Catalogs (CPlus for Craigslist) and Medical (Blink Health) have top-rated apps, indicating opportunities for success in specialized areas.
+Top 3 genres with lowest ratings:
 
-**the content rating by count?**
+        Catalogs: 2.200 (Rank 22nd in total number of ratings)
+        
+        Book: 2.643 (Rank 19th in total number of ratings)
+        
+        Finance: 2.654 (Rank 13th in total number of ratings)
+        
+        Quality of apps (free apps vs paid apps)
+
+## **Tableau Representation** ##
+![image](https://github.com/user-attachments/assets/175ba1af-6f32-46c7-80d6-ad8ba7fc8159)
+
+## **Conclusion** ##
+Our analysis of the mobile App Store data  shows that Games and Entertainment apps are the dominant categories, with free apps leading in both downloads and user ratings. The study also highlights the importance of high-quality apps and user satisfaction for success.
