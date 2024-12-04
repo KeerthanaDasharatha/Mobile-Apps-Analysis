@@ -54,48 +54,37 @@ This repository contains an exploratory data analysis (EDA) on mobile store Apps
 
 ## **Key findings** ##
 
- **Market Analysis**
-
 Total number of genres available: 23
 
-More than half (53.66 %) of the apps belong to the Games genre, followed by Entertainment (7.43 %) and Education (6.29 %)
+More than half (3862) of the apps belong to the Games genre, followed by Entertainment (535) and Education (453)
 
 There are more free apps (56.36 %) compared to paid apps (43.64 %)
 
 
 There are 4 types of contents offered:
-
-       4+ (61.60 %)
-      
-       9+ (13.71 %)
-      
-       12+ (16.05 %)
-      
-       17+ (8.64 %)
+       4+ content rating (61.60 %)
+       9+ content rating(13.71 %)
+       12+ content rating (16.05 %)
+       17+ content rating(8.64 %)
       
 **Trending apps and genres by rating**
 
-The average user rating of all iOS apps is 3.527
+The average user rating of all apps is 3.53
 
-Top 3 genres with highest ratings:
+Top 3 user rating of apps across all categories and by genre
 
-        Productivity: 4.281 (Rank 12th in total number of ratings)
-        
-        Music: 4.261 (Rank 5th in total number of ratings)
-        
-        Photo & Video: 4.092 (Rank 3rd in total number of ratings)
+       Productivity: 4.01
+       Music: 3.98 
+       Photo & Video: 3.80 
+       
+Top 3 Most expensive app with price
 
-Top 3 genres with lowest ratings:
+       LAMP Words For Life	(299.99)
+       Proloquo2Go - Symbol-based AAC(249.99)
+       KNFB Reader (99.99)
 
-        Catalogs: 2.200 (Rank 22nd in total number of ratings)
-        
-        Book: 2.643 (Rank 19th in total number of ratings)
-        
-        Finance: 2.654 (Rank 13th in total number of ratings)
-        
-        Quality of apps (free apps vs paid apps)
+## **Tableau Representation** ##     
 
-## **Tableau Representation** ##
 ![image](https://github.com/user-attachments/assets/175ba1af-6f32-46c7-80d6-ad8ba7fc8159)
 
 ## **Conclusion** ##
