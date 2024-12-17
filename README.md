@@ -48,7 +48,7 @@ This repository contains an exploratory data analysis (EDA) on mobile store Apps
    
    > 15 Columns
    
-   > dara type : numeric & Varchar
+   > data type : numeric & Varchar
    
 3. Tableau
 
@@ -62,6 +62,7 @@ There are more free apps (56.36 %) compared to paid apps (43.64 %)
 
 
 There are 4 types of contents offered:
+
        4+ content rating (61.60 %)
        9+ content rating(13.71 %)
        12+ content rating (16.05 %)
