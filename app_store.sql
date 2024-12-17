@@ -18,30 +18,30 @@ CREATE TABLE app_store (
 );
 SELECT * FROM app_store;
 
---- check the number of apps in datasets ---
+-- check the number of apps in datasets --
 SELECT COUNT(id) AS app_count FROM app_store;
 
 
---- finding missing values ---
+-- finding missing values --
 SELECT COUNT(*) AS missingvalue FROM app_store
 WHERE app_name is NULL
 OR user_rating is NULL
 OR prime_genre is NULL
 
 
---- Get top-rated apps in a each category ---
+-- Get top-rated apps in a each category --
 SELECT app_name, COUNT (*) AS app_count FROM app_store
 GROUP BY app_name
 ORDER BY app_count DESC;
 
 
---- Number of apps per Gern ---
+-- Number of apps per Gern --
 SELECT prime_genre,COUNT(*) AS num_apps FROM app_store
 GROUP BY prime_genre
 ORDER BY num_apps DESC;
 
 
--- What is the total user rating count of apps by genre? ---
+-- What is the total user rating count of apps by genre? --
 SELECT
 	prime_genre, 
 	SUM(rating_count_tot) AS user_rating_count,
@@ -50,7 +50,7 @@ FROM app_store
 GROUP BY 1;
 
 
--- Get top-rated apps in a specific category ---
+-- Get top-rated apps in a specific category --
 SELECT app_name,user_rating FROM app_store
 WHERE prime_genre = 'Games'
 ORDER BY user_rating DESC
@@ -88,7 +88,7 @@ Select
 from app_stats;
 
 
--- What is the proportion of free and paid apps by genre
+-- What is the proportion of free and paid apps by genre --
 
 WITH genre_stats AS (
 SELECT 
@@ -113,12 +113,12 @@ FROM genre_stats;
 -- Top rated app for each genre --
 SELECT * FROM(
 SELECT e.*,
-RANK()over(PARTITION BY prime_genre
+RANK()over(PARTITION BY prime_genre)
 ORDER BY user_rating desc,rating_count_tot DESC) AS rank
 FROM app_store e) AS x
 WHERE x.rank = 1
 
--- What is the content rating by count?
+-- What is the content rating by count? --
 
 WITH content_count AS (
 SELECT 
@@ -151,7 +151,7 @@ SELECT
 FROM price_rank
 WHERE rnk BETWEEN 1 AND 10;
 
---What is the average number of devices supported, screenshot images, and languages supported by genre?
+--What is the average number of devices supported, screenshot images, and languages supported by genre? --
 SELECT 
 	prime_genre, 
 	ROUND(AVG(sup_devices_num)) sup_devices_avg,
